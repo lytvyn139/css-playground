@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 100vh;
+	background: linear-gradient(45deg, #000, #78ffd6);
+}
+
+h1 {
+	background: /* the default MDN color tho, don't hate me */
+						linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+	font-family: 'Abril Fatface', cursive;
+	font-size: 8em;
+	letter-spacing: 0.2em;
+	margin: 0 auto;
+	padding: 2.5em 1em;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: moving 6s linear infinite alternate;
+
+}
+
+@keyframes moving {
+	0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+

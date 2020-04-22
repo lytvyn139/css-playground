@@ -1,0 +1,30 @@
+img{
+	margin: 5% auto; 
+	border: 2px black solid;
+} 
+
+.wrapper{
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.overlay{
+	background-color: black;
+	opacity: .9;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	z-index: 10;
+}
+
+.overlayimg{
+	position: absolute;
+	z-index: 11;
+	left: 40%;
+	top: 20%;
+	margin: 0 auto;
+}
+

@@ -1,0 +1,52 @@
+body,
+#loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+:root {
+	--color-light: #f7f7f7;
+	--color-dark: #283747;
+	--color-grad-1: #ff4b1f;
+	--color-grad-2: #1fddff;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--color-dark);
+}
+
+#loader {
+	flex-direction: column-reverse;
+	color: var(--color-light);
+	font: 2.5em sans-serif;
+}
+
+progress[value] {
+	width: 14.5em;
+	height: 0.5em;
+	border: none;
+	border-radius: 0.125em;
+	background: var(--color-light);
+}
+
+progress[value]::-webkit-progress-bar {
+	border: none;
+	border-radius: 0.125em;
+	background: var(--color-light);
+}
+
+progress[value]::-webkit-progress-value {
+	border: none;
+	border-radius: inherit;
+	background: linear-gradient(45deg, var(--color-grad-1), var(--color-grad-2));
+}
+
+output:not(:empty) {
+	padding-bottom: 1em;
+}
+
+output:not(:empty):after {
+	content: '%';
+}

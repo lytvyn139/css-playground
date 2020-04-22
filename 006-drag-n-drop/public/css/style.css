@@ -1,0 +1,52 @@
+html {
+	background-color: beige;
+}
+
+.widget {
+	width: 25em;
+	height: 10em;
+	background: #2A2234;
+	border-radius: .5em;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+}
+
+.widget:active {
+	cursor: grabbing;
+}
+
+.widget h1 {
+	font-size: 1.4rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #ffffff;
+}
+
+.widget-icon {
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 50%;
+	margin-left: .5rem;
+	margin-top: .5rem;
+	cursor: pointer;
+}
+
+.red {
+	background: #FF605C;
+}
+.red:hover {
+	background: #CA3C38;
+}
+.yellow {
+	background: #FFBD44;
+}
+.green {
+	background: #00CA4E;
+}
+

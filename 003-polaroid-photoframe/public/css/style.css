@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+body {
+  padding: 2em 2em;
+	background-color: wheat;
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+p {
+	font-size: 1em;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: space-around;
+  width: 100%;
+	background-color: wheat;
+	text-align: center;
+	margin: 0 auto;
+}  
+
+.polaroid-frame {   
+	width: 15%;
+	position: relative;
+	display: inline-block; 
+	background: linear-gradient(to bottom, #ece9e6, #fafafa);
+  padding: 3em 3em 1em 3em;  
+	margin: 1em 1em;			     
+}
+
+.polaroid-image {
+  width: 100%;
+  background-size: cover;
+}
+
+.polaroid {
+  width: 100%;
+}
+
+

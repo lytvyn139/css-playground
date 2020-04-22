@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(#004e92, #000428);
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  position: relative;
+  width: 18.75rem;
+  height: 8.125rem;
+  padding: 0.4375rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) inset;
+  border-radius: 4.06rem;
+  cursor: pointer;
+  background: linear-gradient(to right, #ed1c24, #ff5a2f 45%, #7fd03e 55%, #099e00 100%);
+  background-size: 87.5rem 100%;
+  transition: 0.3s ease;
+}
+
+label:before {
+  content: "off";
+  font-family: sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  width: 7.25rem;
+  height: 7.25rem;
+  position: absolute;
+  left: 0.4375rem;
+  top: 0.4375rem;
+  background: radial-gradient(#fff, #f0f0f0);
+  border-radius: 90%;
+  text-align: center;
+  line-height: 7.25rem;
+  color: #ed1c24;
+  text-transform: uppercase;
+  transition: left 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+label:active:before {
+  transform: scale(0.9);
+}
+
+input:checked + label {
+  background-position-x: -68.75rem;
+}
+input:checked + label:before {
+  content: "on";
+  color: #009e00;
+  left: 11.0625rem;
+}
