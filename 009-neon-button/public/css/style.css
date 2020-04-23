@@ -1,0 +1,278 @@
+/* this is not DRY code, it was made like that,
+to speed up the copy chunk of code process */
+
+:root {
+  --color-blue: #2196f3;
+  --color-green: #76ff1b;
+  --color-pink: #d4145a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #031321;
+  font-family: arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin: 3em;
+  padding: 1em;
+  text-align: center;
+}
+
+#blue {
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+#blue:hover {
+  color: #00549e;
+  background-color: var(--color-blue);
+  box-shadow: 0 0 10px var(--color-blue), 0 0 40px var(--color-blue), 0 0 80px var(--color-blue);
+  transition-delay: 1s;
+}
+
+#blue span {
+  position: absolute;
+  display: block;
+}
+
+#blue span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-blue));
+}
+
+#blue:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+#blue span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--color-blue));
+}
+
+#blue:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+#blue span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--color-blue));
+}
+
+#blue:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: .25s;
+}
+
+#blue span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, var(--color-blue));
+}
+
+#blue:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .75s;
+}
+
+
+
+/* ///////////////////////// */
+#green {
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: var(--color-green);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+#green:hover {
+  color: #1e9400;
+  background-color: var(--color-green);
+  box-shadow: 0 0 10px var(--color-green), 0 0 40px var(--color-green), 0 0 80px var(--color-green);
+  transition-delay: 1s;
+}
+
+#green span {
+  position: absolute;
+  display: block;
+}
+
+#green span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-green));
+}
+
+#green:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+#green span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--color-green));
+}
+
+#green:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+#green span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--color-green));
+}
+
+#green:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: .25s;
+}
+
+#green span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, var(--color-green));
+}
+
+#green:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .75s;
+}
+/* ///////////////////////// */
+#pink {
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: var(--color-pink);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+#pink:hover {
+  color: #86005e;
+  background-color: var(--color-pink);
+  box-shadow: 0 0 10px var(--color-pink), 0 0 40px var(--color-pink), 0 0 80px var(--color-pink);
+  transition-delay: 1s;
+}
+
+#pink span {
+  position: absolute;
+  display: block;
+}
+
+#pink span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-pink));
+}
+
+#pink:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+#pink span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--color-pink));
+}
+
+#pink:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+#pink span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--color-pink));
+}
+
+#pink:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: .25s;
+}
+
+#pink span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, var(--color-pink));
+}
+
+#pink:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .75s;
+}
+
