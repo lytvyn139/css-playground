@@ -7,15 +7,15 @@ some will be pure JS.
 no installation required 🙅‍♂️
 
 ## Usage
-Feel free to use it. 
-all files are local, no need to run the Live Server
+Most of the examples can be runned without live server plugin,
+but some of them require, it will be mentioned in project
 
 ## Folder Structure
 ```bash
-public/css/ ➡️ cascade style sheets
-public/img/ ➡️ images, if needed
-public/js/ ➡️ JS files
-index.html ➡️ start html
+public/css/ ➡️  cascade style sheets
+public/img/ ➡️  images
+public/js/ ➡️  JS files
+index.html ➡️  start html
 ```
 
 ## [000-demo]
