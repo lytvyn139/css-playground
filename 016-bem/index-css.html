@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*
+.block { ... }
+.block__element { ... }
+.block--modifier { ... }
+*/
+    body {
+      display: flex;
+    }
+
+    .card {
+      margin: 2em;
+      max-width: 300px;
+      padding: 2em;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .45);
+    }
+
+    .card__body {
+      color: white;
+    }
+
+    .card__title {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card--light {
+      background: #ddd;
+    }
+
+    .card--dark {
+      background: #000;
+      color: white;
+      margin: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card card--light">
+    <img class="card__image" src="https://unsplash.it/300" alt="">
+    <h2 class="card__title">I'm a light card</h2>
+    <p class="card__body">And here would be the content of my card</p>
+  </div>
+  
+  <div class="card card--dark">
+    <img class="card__image" src="https://unsplash.it/300" alt="">
+    <h2 class="card__title">I'm a light card</h2>
+    <p class="card__body">And here would be the content of my card</p>
+  </div>
+</body>
+
+</html>
