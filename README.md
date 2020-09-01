@@ -7,14 +7,6 @@ no installation is required
 ## Usage 🥢
 Most of the examples can be runned without live server plugin, if it didn't run, try live server VS code plugin or etc
 
-## Folder Structure
-```
-public/css/ ➡️  cascade style sheets
-public/img/ ➡️  images
-public/js/ ➡️  JS files
-index.html ➡️  start html
-```
-
 ## [000-demo]
 ***.jpg/, ***.png files represents the screenshot of project
 
