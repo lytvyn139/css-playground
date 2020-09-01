@@ -1,0 +1,223 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body:after
+{
+    position: fixed;
+    z-index: 0;
+    top: -110%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    content: '';
+    animation: grain 1s steps(10) infinite;
+    opacity: .8;
+    background-image: url(../img/grains.png);
+}
+
+@keyframes grain
+{
+    0%,
+    100%
+    { transform: translate(0, 0); }
+
+    10%
+    { transform: translate(-5%, -10%); }
+
+    20%
+    { transform: translate(-15%, -5%); }
+
+    30%
+    { transform: translate(7%, -25%); }
+
+    40%
+    { transform: translate(-5%, 25%); }
+
+    50%
+    { transform: translate(-15%, 10%); }
+
+    60%
+    { transform: translate(15%, 0); }
+
+    70%
+    { transform: translate(0, 15%); }
+
+    80%
+    { transform: translate(3%, 35%); }
+
+    90%
+    { transform: translate(-10%, 10%); }
+}
+
+.content
+{
+    position: relative;
+    z-index: 1;
+}
+
+h1
+{
+    font-size: 'Playfair Display;' !important;
+    margin: 32px 0 32px 40px !important;
+    color: #e3e3e3 !important;
+}
+
+.row
+{
+    z-index: 1;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fraction
+{
+    height: 220px;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.row h5
+{
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin: 48px 0 2px 4px;
+    color: #fff;
+}
+
+.row h5:before
+{
+    position: absolute;
+    top: 50px;
+    left: -2px;
+    display: block;
+    width: 2px;
+    height: 22px;
+    content: '';
+    background: #fff;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 70px !important;
+    margin-left: 4px;
+    color: gray;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: lightgray !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: gray !important;
+}
+
+.fraction:hover:before {
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    left: 100px;
+    width: 280px;
+    height: 280px;
+    content: '';
+    transition: 1s !important;
+    animation: anim 3.2s ease-in-out;
+}
+
+.card1.fraction:hover::before {
+    background: url(../img/team1.jpg);
+}
+
+.card2.fraction:hover::before {
+    background: url(../img/team2.jpg);
+}
+
+.card3.fraction:hover::before {
+    background: url(../img/team3.jpg);
+}
+
+.card4.fraction:hover::before {
+    background: url(../img/team8.jpg);
+}
+
+.card5.fraction:hover::before {
+    background: url(../img/team4.jpg);
+}
+
+.card6.fraction:hover::before {
+    background: url(../img/team6.jpg);
+}
+
+.card7.fraction:hover::before { 
+    background: url(../img/team5.jpg);
+}
+
+.card8.fraction:hover::before {
+    background: url(../img/team7.jpg);
+}
+
+@keyframes anim {
+    0%
+    {
+        left: 70px;
+        opacity: 0;
+    }
+    20%
+    {
+        left: 100px;
+        opacity: 1;
+    }
+    100%
+    {
+        left: 100px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    a
+    {
+        display: none;
+    }
+    .fraction
+    {
+        height: 100px;
+    }
+    .row h5
+    {
+        margin: 28px 0 2px 4px;
+    }
+    .row p
+    {
+        margin-bottom: 10px !important;
+    }
+    .row h5::before
+    {
+        top: 26px;
+    }
+    .fraction:hover::before
+    {
+        display: block;
+        /* display: block; */
+    }
+}
